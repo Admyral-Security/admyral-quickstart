@@ -5,10 +5,11 @@ description = ""
 authors = ["Your Name <you@example.com>"]
 license = "Apache 2.0"
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
-admyral = "^0.1.6"
+admyral = "^0.1.13"
 
 
 [build-system]

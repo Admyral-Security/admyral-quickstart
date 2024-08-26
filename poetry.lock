@@ -2,13 +2,13 @@
 
 [[package]]
 name = "admyral"
-version = "0.1.6"
+version = "0.1.13"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.11"
 files = [
-    {file = "admyral-0.1.6-py3-none-any.whl", hash = "sha256:77a0f177ae4831694f83859c6ec5a58aab09dfa5b7cb914a0c690131a3c2d863"},
-    {file = "admyral-0.1.6.tar.gz", hash = "sha256:8637848722e53351d45198650af8d7a5437b98291c3da46c0961353dfdf1ffda"},
+    {file = "admyral-0.1.13-py3-none-any.whl", hash = "sha256:ba4e7bc28499b70f67ddb3622dfc864771a64ab451adba8a313640d3e8c9c31d"},
+    {file = "admyral-0.1.13.tar.gz", hash = "sha256:034632cd0bf1c5f2839087220e3d492ced1aa413ef81c07c01e6d3e6018ac4d0"},
 ]
 
 [package.dependencies]
@@ -423,17 +423,17 @@ typing-extensions = ">=4.0.0"
 
 [[package]]
 name = "boto3"
-version = "1.35.2"
+version = "1.35.5"
 description = "The AWS SDK for Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "boto3-1.35.2-py3-none-any.whl", hash = "sha256:c2f0837a259002489e59d1c30008791e3b3bb59e30e48c64e1d2d270147a4549"},
-    {file = "boto3-1.35.2.tar.gz", hash = "sha256:cbf197ce28f04bc1ffa1db0aa26a1903d9bfa57a490f70537932e84367cdd15b"},
+    {file = "boto3-1.35.5-py3-none-any.whl", hash = "sha256:2cef3aa476181395c260f4b6e6c5565e5a3022a874fb6b579d8e6b169f94e0b3"},
+    {file = "boto3-1.35.5.tar.gz", hash = "sha256:5724ddeda8e18c7614c20a09c20159ed87ff7439755cf5e250a1a3feaf9afb7e"},
 ]
 
 [package.dependencies]
-botocore = ">=1.35.2,<1.36.0"
+botocore = ">=1.35.5,<1.36.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.10.0,<0.11.0"
 
@@ -442,13 +442,13 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.35.2"
+version = "1.35.5"
 description = "Low-level, data-driven core of boto 3."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "botocore-1.35.2-py3-none-any.whl", hash = "sha256:92b168d8be79055bb25754aa34d699866d8aa66abc69f8ce99b0c191bd9c6e70"},
-    {file = "botocore-1.35.2.tar.gz", hash = "sha256:96c8eb6f0baed623a1b57ca9f24cb21d5508872cf0dfebb55527a85b6dbc76ba"},
+    {file = "botocore-1.35.5-py3-none-any.whl", hash = "sha256:8116b72c7ae845c195146e437e2afd9d17538a37b3f3548dcf67c12c86ba0742"},
+    {file = "botocore-1.35.5.tar.gz", hash = "sha256:3a0086c7124cb3b0d9f98563d00ffd14a942c3f9e731d8d1ccf0d3a1ac7ed884"},
 ]
 
 [package.dependencies]
@@ -1435,13 +1435,13 @@ license = ["ukkonen"]
 
 [[package]]
 name = "idna"
-version = "3.7"
+version = "3.8"
 description = "Internationalized Domain Names in Applications (IDNA)"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.6"
 files = [
-    {file = "idna-3.7-py3-none-any.whl", hash = "sha256:82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0"},
-    {file = "idna-3.7.tar.gz", hash = "sha256:028ff3aadf0609c1fd278d8ea3089299412a7a8b9bd005dd08b9f8285bcb5cfc"},
+    {file = "idna-3.8-py3-none-any.whl", hash = "sha256:050b4e5baadcd44d760cedbd2b8e639f2ff89bbc7a5730fcc662954303377aac"},
+    {file = "idna-3.8.tar.gz", hash = "sha256:d838c2c0ed6fced7693d5e8ab8e734d5f8fda53a039c0164afb0b82e771e3603"},
 ]
 
 [[package]]
@@ -1702,13 +1702,13 @@ std-uritemplate = ">=0.0.38"
 
 [[package]]
 name = "microsoft-kiota-authentication-azure"
-version = "1.0.0"
+version = "1.1.0"
 description = "Authentication provider for Kiota using Azure Identity"
 optional = false
 python-versions = "*"
 files = [
-    {file = "microsoft_kiota_authentication_azure-1.0.0-py2.py3-none-any.whl", hash = "sha256:289fe002951ae661415a6d3fa7c422c096b739165acb32d786316988120a1b27"},
-    {file = "microsoft_kiota_authentication_azure-1.0.0.tar.gz", hash = "sha256:752304f8d94b884cfec12583dd763ec0478805c7f80b29344e78c6d55a97bd01"},
+    {file = "microsoft_kiota_authentication_azure-1.1.0-py2.py3-none-any.whl", hash = "sha256:22ecbf7e89120aca525cb3f89576617e6c6601b20b06ac720a8e66175698cf84"},
+    {file = "microsoft_kiota_authentication_azure-1.1.0.tar.gz", hash = "sha256:8940084a3c1c25d1cde1d3b193ef7164dc6323e3b8200e2f695cbc937797bac6"},
 ]
 
 [package.dependencies]
@@ -1737,13 +1737,13 @@ opentelemetry-sdk = ">=1.20.0"
 
 [[package]]
 name = "microsoft-kiota-serialization-form"
-version = "0.1.0"
+version = "0.1.1"
 description = "Implementation of Kiota Serialization Interfaces for URI-Form encoded serialization"
 optional = false
 python-versions = "*"
 files = [
-    {file = "microsoft_kiota_serialization_form-0.1.0-py2.py3-none-any.whl", hash = "sha256:5bc76fb2fc67d7c1f878f876d252ea814e4fc38df505099b9b86de52d974380a"},
-    {file = "microsoft_kiota_serialization_form-0.1.0.tar.gz", hash = "sha256:663ece0cb1a41fe9ddfc9195aa3f15f219e14d2a1ee51e98c53ad8d795b2785d"},
+    {file = "microsoft_kiota_serialization_form-0.1.1-py2.py3-none-any.whl", hash = "sha256:7a2da956edd3329ff74ec1a34eded910fd9cda57ce8c71f3797e359adc9993f7"},
+    {file = "microsoft_kiota_serialization_form-0.1.1.tar.gz", hash = "sha256:f72dd50081250d1e49111682eccf620d3c2e335195d50c096b35ec5a5ef59a54"},
 ]
 
 [package.dependencies]
@@ -1752,13 +1752,13 @@ pendulum = ">=3.0.0"
 
 [[package]]
 name = "microsoft-kiota-serialization-json"
-version = "1.3.0"
+version = "1.3.1"
 description = "Implementation of Kiota Serialization interfaces for JSON"
 optional = false
 python-versions = "*"
 files = [
-    {file = "microsoft_kiota_serialization_json-1.3.0-py2.py3-none-any.whl", hash = "sha256:fbf82835d8b77ef21b496aa711a512fe4494fa94dfe88f7fd014dffe33778e20"},
-    {file = "microsoft_kiota_serialization_json-1.3.0.tar.gz", hash = "sha256:235b680e6eb646479ffb7b59d2a6f0216c4f7e1c2ff1219fd4d59e898fa6b124"},
+    {file = "microsoft_kiota_serialization_json-1.3.1-py2.py3-none-any.whl", hash = "sha256:147f4413d1b3c8f622cc16fc228d739116de1af2dfe2c684c6220351ba73a4b4"},
+    {file = "microsoft_kiota_serialization_json-1.3.1.tar.gz", hash = "sha256:17449cb935f9301098c14b659b3bf8ba2fc49a133808419e2e9946a25f277641"},
 ]
 
 [package.dependencies]
@@ -3325,13 +3325,13 @@ telegram = ["requests"]
 
 [[package]]
 name = "typer"
-version = "0.12.4"
+version = "0.12.5"
 description = "Typer, build great CLIs. Easy to code. Based on Python type hints."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "typer-0.12.4-py3-none-any.whl", hash = "sha256:819aa03699f438397e876aa12b0d63766864ecba1b579092cc9fe35d886e34b6"},
-    {file = "typer-0.12.4.tar.gz", hash = "sha256:c9c1613ed6a166162705b3347b8d10b661ccc5d95692654d0fb628118f2c34e6"},
+    {file = "typer-0.12.5-py3-none-any.whl", hash = "sha256:62fe4e471711b147e3365034133904df3e235698399bc4de2b36c8579298d52b"},
+    {file = "typer-0.12.5.tar.gz", hash = "sha256:f592f089bedcc8ec1b974125d64851029c3b1af145f04aca64d69410f0c9b722"},
 ]
 
 [package.dependencies]
@@ -3887,4 +3887,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "ad04d605af656fb45560be0ce4458e14d2944b5a6677fc2d3441360177ceb6b6"
+content-hash = "a1ebff52afc15161fafdd156b6092bc9010182fcacc03718c22c95cae3c05f2c"
