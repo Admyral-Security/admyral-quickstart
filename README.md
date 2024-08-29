@@ -29,12 +29,12 @@
 
 ```bash
 git clone git@github.com:Admyral-Security/admyral-quickstart.git
+cd admyral-quickstart
 ```
 
 2. Install the required Python packages in the admyral-quickstart repo:
 
 ```bash
-cd admyral-quickstart
 poetry install
 ```
 
