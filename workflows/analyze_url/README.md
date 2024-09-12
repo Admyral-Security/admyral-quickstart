@@ -9,12 +9,14 @@ To use this workflow, the following secret is required. To set it up, please fol
 - [VirusTotal](https://docs.admyral.dev/integrations/virus_total/virus_total)
 
 > [!IMPORTANT]
-> The workflow expects the following secret name: \
-> VirusTotal: virus_total
+> The workflow currently expects the following secret names: \
+> **VirusTotal**: `virus_total` \
+> If your secret has a different name, please adjust the secret mapping in the workflow function accordingly \
+> e.g `secrets = {"VIRUS_TOTAL_SECRET": "your_secret_name"}`
 
 ## Set Up Workflow
 
-Use the `admyral` CLI to push the workflow:
+Use the CLI to push the workflow:
 
 ```bash
 poetry run admyral workflow push analyze_url -f workflows/analyze_url/analyze_url.py --activate
@@ -22,7 +24,7 @@ poetry run admyral workflow push analyze_url -f workflows/analyze_url/analyze_ur
 
 ## Expected Payload
 
-The workflow expects the following payload:
+The workflow expects the following payload schema:
 
 ```json
 {
@@ -34,12 +36,12 @@ The workflow expects the following payload:
 
 Use the Admyral UI:
 
-1. Open the workflow, by clicking on the **>** icon in the Workflow Overview
+1. Open the workflow in the workflow No-Code editor
 2. Click on **Run**
-3. Input the expected payload
+3. Input the payload following the expeted schema
 4. Click on **Run Workflow**
 
-Use the `admyral` CLI to trigger the workflow:
+Use the CLI to trigger the workflow:
 
 ```bash
 poetry run admyral workflow trigger analyze_url -p '{"url": "your_url_to_analyze"}'

@@ -62,7 +62,7 @@ def build_info_message_owner_changes(
     description="Alert on GitHub Orga Owner Changes",
     triggers=[Schedule(cron="0 * * * *")],
 )
-def github_audit_logs_owner_changes(payload: dict[str, JsonValue]):
+def monitor_github_org_owner_changes(payload: dict[str, JsonValue]):
     start_and_end_time = get_time_range_of_last_full_hour()
 
     logs = search_github_enterprise_audit_logs(

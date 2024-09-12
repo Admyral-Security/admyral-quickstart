@@ -1,4 +1,4 @@
-#
+# Monitor GitHub Org Owner Changes
 
 ## Required Secrets
 
@@ -7,28 +7,50 @@ To use this workflow, the following secrets are required. To set them up, please
 -
 
 > [!IMPORTANT]
-> The workflow expects the following secret name: \
+> The workflow currently expects the following secret names: \
+>
+> If your secrets have a different name, please adjust the secret mappings in the workflow function accordingly \
+> e.g `secrets = {"<>": "your_secret_name"}` \
 
 ## Set Up Workflow
 
-Use the `admyral` CLI to push the workflow:
+1.
+
+Use the CLI to push the custom actions:
 
 ```bash
-poetry run admyral workflow push <> -f workflows/ --activate
+poetry run admyral action push
+```
+
+Use the CLI to push the workflow:
+
+```bash
+poetry run admyral workflow push  --activate
 ```
 
 ## Expected Payload
 
-The workflow expects the following payload:
+The workflow expects the following payload schema:
 
 ```json
-{}
+{
+  "": ""
+}
 ```
 
-## Trigger Workflow
+> [!IMPORTANT]
+> The workflow doesn't expect any payload.
 
-You can run the workflow from the Admyral UI or using the `admyral` CLI:
+## Run Workflow
+
+Use the Admyral UI:
+
+1. Open the workflow in the workflow No-Code editor
+2. Click on **Run**
+3. Click on **Run Workflow**
+
+Use the CLI to trigger the workflow:
 
 ```bash
-poetry run admyral workflow trigger <> -p '{"": ""}'
+poetry run admyral workflow trigger
 ```
