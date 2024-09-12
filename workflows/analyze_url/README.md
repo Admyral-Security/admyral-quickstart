@@ -30,7 +30,7 @@ The workflow expects the following payload:
 }
 ```
 
-## Trigger Workflow
+## Run Workflow
 
 Use the Admyral UI:
 
@@ -39,7 +39,7 @@ Use the Admyral UI:
 3. Input the expected payload
 4. Click on **Run Workflow**
 
-Use the `admyral` CLI:
+Use the `admyral` CLI to trigger the workflow:
 
 ```bash
 poetry run admyral workflow trigger analyze_url -p '{"url": "your_url_to_analyze"}'
