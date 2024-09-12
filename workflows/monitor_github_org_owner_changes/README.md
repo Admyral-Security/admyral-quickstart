@@ -53,7 +53,7 @@ Use the Admyral UI:
 2. Click on **Run**
 3. Click on **Run Workflow**
 
-Use the CLI to trigger the workflow:
+Or use the CLI to trigger the workflow:
 
 ```bash
 poetry run admyral workflow trigger monitor_github_org_owner_changes

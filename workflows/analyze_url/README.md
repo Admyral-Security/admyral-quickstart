@@ -1,4 +1,4 @@
-# Analyze URL Workflow
+# Analyze URL Using VirusTotal
 
 The workflow uses VirusTotal to analyze a URL.
 
@@ -9,7 +9,7 @@ To use this workflow, the following secret is required. To set it up, please fol
 - [VirusTotal](https://docs.admyral.dev/integrations/virus_total/virus_total)
 
 > [!IMPORTANT]
-> The workflow currently expects the following secret names: \
+> The workflow currently expects the following secret name: \
 > **VirusTotal**: `virus_total` \
 > If your secret has a different name, please adjust the secret mapping in the workflow function accordingly \
 > e.g `secrets = {"VIRUS_TOTAL_SECRET": "your_secret_name"}`
@@ -41,7 +41,7 @@ Use the Admyral UI:
 3. Input the payload following the expeted schema
 4. Click on **Run Workflow**
 
-Use the CLI to trigger the workflow:
+Or use the CLI to trigger the workflow:
 
 ```bash
 poetry run admyral workflow trigger analyze_url -p '{"url": "your_url_to_analyze"}'
