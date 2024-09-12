@@ -9,7 +9,7 @@ To use this workflow, the following secret is required. To set it up, please fol
 - [VirusTotal](https://docs.admyral.dev/integrations/virus_total/virus_total)
 
 > [!IMPORTANT]
-> The workflow expects the following secret name:
+> The workflow expects the following secret name: \
 > VirusTotal: virus_total
 
 ## Set Up Workflow
