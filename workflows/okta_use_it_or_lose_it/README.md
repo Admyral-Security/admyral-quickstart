@@ -2,6 +2,10 @@
 
 This workflow checks for inactive Okta users who have not logged in for a specified period (default: 90 days) and sends a Slack message to that user, asking if they still need access to Okta.
 
+> [!IMPORTANT]
+> In case you want to use this workflow together with the `retool_access_review` workflow, you have to combine the functionality within the `slack_interactivity.py` by adding the respective `if` condition in the `slack_interactivity.py` within the retool_access_review directory. \
+> This is because the Slack API only allows the configuration of one interactivity webhook at a time.
+
 ## Required Secrets
 
 To use this workflow, the following secrets are required. To set them up, please follow the respective guide on the linked documentation page.
@@ -34,10 +38,14 @@ poetry run admyral action push filter_inactive_okta_users -a workflows/okta_use_
 poetry run admyral action push build_okta_inactivity_messages -a workflows/okta_use_it_or_lose_it/okta_use_it_or_lose_it.py
 ```
 
-Use the CLI to push the workflow:
+Use the CLI to push the workflows:
 
 ```bash
 poetry run admyral workflow push okta_use_it_or_lose_it -f workflows/okta_use_it_or_lose_it/okta_use_it_or_lose_it.py --activate
+```
+
+```bash
+poetry run admyral workflow push slack_interactivity -f workflows/okta_use_it_or_lose_it/okta_use_it_or_lose_it.py --activate
 ```
 
 ## Expected Payload

@@ -58,5 +58,4 @@ Or use the CLI to trigger the workflow:
 
 ```bash
 poetry run admyral workflow trigger okta_password_policy_monitoring
-
 ```

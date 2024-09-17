@@ -12,16 +12,16 @@ To use this workflow, the following secrets are required. To set them up, please
 > [!IMPORTANT]
 > The workflow currently expects the following secret names: \
 >
-> - **Retool**: `retool_secret` \
-> - **Slack**: `slack_secret`
->   If your secrets have a different name, please adjust the secret mappings in the workflow function accordingly \
->   e.g `secrets = {"RETOOL_SECRET": "your_secret_name"}` and for Slack respectively. \
+> **Retool**: `retool_secret` \
+> **Slack**: `slack_secret` \
+>  If your secrets have a different name, please adjust the secret mappings in the workflow function accordingly \
+>  e.g `secrets = {"RETOOL_SECRET": "your_secret_name"}` and for Slack respectively. \
 
 ## Set Up Workflow
 
 There are no adjustments required for the workflow to work, however you can optionally:
 
-Adjust the threshold, determining if a user should be counted as inactive by changing the value of `inactivity_threshold`
+Adjust the threshold, determining if a user should be counted as inactive by changing the value of `inactivity_threshold` within the workflow function.
 
 Use the CLI to push the custom actions:
 

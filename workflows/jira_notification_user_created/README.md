@@ -1,4 +1,4 @@
-# Jira Notify User Creation
+# Jira Notify On User Creation
 
 This workflow monitors Jira for newly created user accounts and sends a Slack notification with relevant details.
 
@@ -20,7 +20,7 @@ To use this workflow, the following secrets are required. To set them up, please
 ## Set Up Workflow
 
 1. Open the `jira_notification_user_created.py` file
-2. Adjust the `email` with the email of the person to receive the slack notification
+2. Adjust the `email` parameter with the email of the person to receive the slack notification
 
 Use the CLI to push the workflow:
 
@@ -29,8 +29,6 @@ poetry run admyral workflow push jira_notification_user_created workflows/jira_n
 ```
 
 ## Expected Payload
-
-The workflow expects the following payload schema:
 
 > [!IMPORTANT]
 > The workflow doesn't expect any payload.

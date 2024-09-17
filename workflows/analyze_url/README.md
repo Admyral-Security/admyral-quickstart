@@ -38,7 +38,7 @@ Use the Admyral UI:
 
 1. Open the workflow in the workflow No-Code editor
 2. Click on **Run**
-3. Input the payload following the expeted schema
+3. Input the payload following the expected schema
 4. Click on **Run Workflow**
 
 Or use the CLI to trigger the workflow:

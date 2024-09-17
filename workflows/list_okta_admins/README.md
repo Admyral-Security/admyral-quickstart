@@ -1,6 +1,6 @@
-# Okta List Admins
+# List Okta Admins
 
-This workflow retrieves all admin users.
+This workflow retrieves specifc or all user types and lists all admin users.
 
 ## Required Secrets
 
@@ -10,14 +10,16 @@ To use this workflow, the following secrets are required. To set them up, please
 
 > [!IMPORTANT]
 > The workflow currently expects the following secret names: \
-> **Okta**: `okta_secret`
+> **Okta**: `okta_secret` \
 > If your secrets have a different name, please adjust the secret mappings in the workflow function accordingly \
 > e.g `secrets = {"OKTA_SECRET": "your_secret_name"}` \
 
 ## Set Up Workflow
 
+There are no adjustments required for the workflow to work, but you can optionally:
+
 1. Open the `list_okta_admins.py` file
-2. Adjust the search query for user type of interest
+2. Adjust the search query for the user type of interest
 
 Use the CLI to push the workflow:
 

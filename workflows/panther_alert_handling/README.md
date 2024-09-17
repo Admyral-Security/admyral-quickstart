@@ -1,6 +1,10 @@
 # Panther Alert Handling
 
-This workflow handles alerts from Panther, specifically focusing on AWS ALB alerts for a high volume of 4xx errors. It uses AI to generate summaries and recommendations, creates a Jira issue for tracking, and notifies the team via Slack.
+This workflow handles alerts from Panther. It uses AI to generate summaries and recommendations, creates a Jira issue for tracking, and notifies the team via Slack.
+
+> [!IMPORTANT]
+> The panther_alert_handling workflow calls the panther_slack_interactivity workflow. \
+> Note, that the Slack API only allows to configure on interactivity webhook at a time, should you also run other workflows using slack interactivity.
 
 ## Required Secrets
 
@@ -21,10 +25,14 @@ To use this workflow, the following secrets are required. To set them up, please
 1. Open the `panther_alert_handling.py` file
 2. Set the Slack channel ID in `channel_id` where the notifications should be sent
 
-Use the CLI to push the workflow:
+Use the CLI to push the workflows:
 
 ```bash
 poetry run admyral workflow push panther_alert_handling -f workflows/panther_alert_handling/panther_alert_handling.py --activate
+```
+
+```bash
+poetry run admyral workflow push panther_slack_interactivity -f workflows/panther_alert_handling/panther_alert_handling.py --activate
 ```
 
 ## Expected Payload

@@ -14,7 +14,7 @@ To use this workflow, the following secrets are required. To set them up, please
 > [!IMPORTANT]
 > The workflow currently expects the following secret names: \
 > **Slack**: `slack_secret` \
-> **GitHub Enterprise**: `github_enterprise_secret`
+> **GitHub Enterprise**: `github_enterprise_secret` \
 > If your secrets have a different name, please adjust the secret mappings in the workflow function accordingly \
 > e.g `secrets = {"GITHUB_ENTERPRISE_SECRET": "your_secret_name"}` \
 > and for **Slack** respectively

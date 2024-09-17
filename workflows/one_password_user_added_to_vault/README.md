@@ -21,7 +21,7 @@ To use this workflow, the following secrets are required. To set them up, please
 
 1. Open the `one_password_user_added_to_vault.py` file
 2. Adjust the `user_email` with the email of the person who should be notified
-3. Adjust the `vault_id` with your Vault ID for which the audit events should be filtered.
+3. Adjust the `vault_id` with your Vault ID for which the audit events should be filtered
 
 Use the CLI to push the custom actions:
 

@@ -9,7 +9,7 @@ from admyral.actions import get_jira_audit_records, send_slack_message_to_user_b
     "via Slack with the user ID and creation timestamp.",
     triggers=[Webhook(), Schedule(interval_days=1)],
 )
-def jira_notification_permission_change(payload: dict[str, JsonValue]):
+def jira_notification_user_created(payload: dict[str, JsonValue]):
     # jira get audit records for newly created users
     records = get_jira_audit_records(
         filter=["User", "created"],
