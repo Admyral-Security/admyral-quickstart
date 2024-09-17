@@ -1,4 +1,4 @@
-# Retool User Inactivity Check Workflow
+# Retool Notify Inactive Users
 
 This workflow checks for inactive Retool users who have not logged in for a specified period (default: 60 days) and sends a Slack message to that user, asking if they still need access to Retool.
 

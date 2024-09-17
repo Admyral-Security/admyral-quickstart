@@ -1,4 +1,4 @@
-# Okta User Inactivity Check Workflow
+# Okta Notify Inactive Users
 
 This workflow checks for inactive Okta users who have not logged in for a specified period (default: 90 days) and sends a Slack message to that user, asking if they still need access to Okta.
 
