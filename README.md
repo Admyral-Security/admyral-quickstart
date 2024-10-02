@@ -38,13 +38,33 @@ cd admyral-quickstart
 poetry install
 ```
 
+<details>
+   <summary> Optionally, specify custom ports for the needed services </summary>
+
+Copy the content of `.env.example` to a new file called `.env`:
+
+```bash
+cp .env.example .env
+```
+
+Open the `.env` file and change ports as needed.
+
+Afterwards, source the `.env` file to load the environment variables:
+
+```bash
+source .env
+```
+
+</details>
+<br>
+
 3. Start Admyral (**Hint**: you can also use `poetry shell` then you can omit `poetry run` in the following commands):
 
 ```bash
 poetry run admyral up
 ```
 
-4. Open the Admyral UI by visiting [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open the Admyral UI by visiting [http://localhost:3000](http://localhost:3000) (if no custom port was specifed for `ADMYRAL_WEB_PORT`) in your browser.
 
 5. Go to `workflows/analyze_url.py` to check out the workflow defined in code.
 
