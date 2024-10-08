@@ -71,7 +71,7 @@ poetry run admyral up
 6. The workflow uses VirusTotal to analyze a URL. You will need to provide your VirusTotal API key. You can get a free API key by signing up at [VirusTotal](https://www.virustotal.com/) and then store it using the Admyral CLI (Note: replace `your_api_key` with the VirusTotal API key):
 
 ```bash
-poetry run admyral secret set virustotal_api_key --values api_key=your_api_key
+poetry run admyral secret set virustotal_api_key --value api_key=your_api_key
 ```
 
 7. You can use the `admyral` CLI to push your first workflow:
