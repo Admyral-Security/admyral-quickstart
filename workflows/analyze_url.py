@@ -12,7 +12,7 @@ from admyral.actions import (
 def analyze_url(payload: dict[str, JsonValue]):
     virus_total_analyze_url(
         url=payload["url"],
-        secrets={"VIRUS_TOTAL_SECRET": "virus_total"}
+        secrets={"VIRUS_TOTAL_SECRET": "virustotal_api_key"}
     )
 
 
