@@ -64,7 +64,7 @@ source .env
 poetry run admyral up
 ```
 
-4. Open the Admyral UI by visiting [http://localhost:3000](http://localhost:3000) (if no custom port was specifed for `ADMYRAL_WEB_PORT`) in your browser.
+4. Open the Admyral UI by visiting [http://localhost:3000](http://localhost:3000) in your browser. If a custom port was defined using `ADMYRAL_WEB_PORT`, use the defined port number instead of `3000`.
 
 5. Go to `workflows/analyze_url.py` to check out the workflow defined in code.
 
