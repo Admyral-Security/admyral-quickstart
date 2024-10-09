@@ -2,13 +2,13 @@
 
 [[package]]
 name = "admyral"
-version = "0.1.32"
+version = "0.1.34"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.11"
 files = [
-    {file = "admyral-0.1.32-py3-none-any.whl", hash = "sha256:2db823803bc77a7d3617873562779c1896514871da1aa60a5071d4c62b95c628"},
-    {file = "admyral-0.1.32.tar.gz", hash = "sha256:01541634cb123743eed0fbcc3ba9d5f6e840942991c36171a95cc0654c1f5421"},
+    {file = "admyral-0.1.34-py3-none-any.whl", hash = "sha256:3a0248ae93d99b15168cef4e14e89eb948d8039480af4c6dd59e0d3a2d71051f"},
+    {file = "admyral-0.1.34.tar.gz", hash = "sha256:ec4af0ade507316ede572b5ed850ed1e2949b69b6d66667d69f8f3ac5ff6eef2"},
 ]
 
 [package.dependencies]
@@ -4103,4 +4103,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "4bbbb299603f5538cda151f6934b4ab66262a478b7962c0bd77970dcad19b9d0"
+content-hash = "a06bd133b3abed95a2645fe2709dc75421fed6ad6ecca306ce423c840a72e496"
