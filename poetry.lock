@@ -2,13 +2,13 @@
 
 [[package]]
 name = "admyral"
-version = "0.1.35"
+version = "0.1.37"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.11"
 files = [
-    {file = "admyral-0.1.35-py3-none-any.whl", hash = "sha256:dc577ff81b8d0becab59bd8a77c373356ff6b3c1cd6b014d0319e156900f8401"},
-    {file = "admyral-0.1.35.tar.gz", hash = "sha256:23815810e539e22f9d603a31c20017769d1f2f80c78baf4fb8a1f682ceac5cd6"},
+    {file = "admyral-0.1.37-py3-none-any.whl", hash = "sha256:2750bf2bc42db812685b63ef8b98fed7598e258677318738ab2d8f452411dee5"},
+    {file = "admyral-0.1.37.tar.gz", hash = "sha256:542d75f6702ab84a0576b17d388a4556c9c6d676686184e6035351fed4430214"},
 ]
 
 [package.dependencies]
@@ -45,6 +45,7 @@ setuptools-scm = ">=8.1.0,<9.0.0"
 sqlalchemy = {version = ">=2.0.31,<3.0.0", extras = ["asyncio"]}
 sqlmodel = ">=0.0.22,<0.0.23"
 temporalio = ">=1.6.0,<2.0.0"
+tenacity = ">=9.0.0,<10.0.0"
 
 [[package]]
 name = "aiodns"
@@ -3607,6 +3608,21 @@ grpc = ["grpcio (>=1.59.0,<2.0.0)"]
 opentelemetry = ["opentelemetry-api (>=1.11.1,<2.0.0)", "opentelemetry-sdk (>=1.11.1,<2.0.0)"]
 
 [[package]]
+name = "tenacity"
+version = "9.0.0"
+description = "Retry code until it succeeds"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "tenacity-9.0.0-py3-none-any.whl", hash = "sha256:93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539"},
+    {file = "tenacity-9.0.0.tar.gz", hash = "sha256:807f37ca97d62aa361264d497b0e31e92b8027044942bfa756160d908320d73b"},
+]
+
+[package.extras]
+doc = ["reno", "sphinx"]
+test = ["pytest", "tornado (>=4.5)", "typeguard"]
+
+[[package]]
 name = "tokenizers"
 version = "0.20.1"
 description = ""
@@ -4334,4 +4350,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "d747c77e35af1a8982d2df6d99bb5dc4a2a8113b3043cd59489ed4c34ed06007"
+content-hash = "e7d8a75764beb075753013ee5aacb45aba8e8d140ab9bc01ca98ec5fe78965cd"
