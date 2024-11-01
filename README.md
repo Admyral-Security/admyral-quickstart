@@ -19,8 +19,8 @@
 
 **Prerequisites**:
 
-- Python 3.12
-- Poetry
+- Python 3.12 (Recommended to install via [pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#installation))
+- [Poetry](https://python-poetry.org/docs/) (Recommended installation via `pipx`: `pipx install poetry`)
 - Docker
 
 ## Getting Started
